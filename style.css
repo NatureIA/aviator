@@ -1,42 +1,82 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #121212;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
   color: white;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.painel {
-  margin: 20px auto;
-  width: 300px;
-  background: black;
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.card {
+  background: #111;
+  border: 2px solid #00ffc8;
+  border-radius: 12px;
   padding: 20px;
-  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px #00ffc8;
+  margin-bottom: 20px;
 }
 
-.btn {
-  background: green;
-  color: white;
-  padding: 10px;
-  margin-top: 10px;
-  cursor: pointer;
+h1 {
+  font-size: 2em;
+  color: #00ffc8;
+  margin-bottom: 15px;
 }
 
 .sinal {
-  font-size: 24px;
-  margin: 10px 0;
+  font-size: 1.8em;
+  margin: 15px 0;
+  color: #fff;
+  text-shadow: 0 0 10px #00ffc8;
+}
+
+.botao {
+  background: #00ffc8;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #00cfa0;
+  transform: scale(1.05);
+}
+
+.historico-title {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #00ffc8;
 }
 
 .historico {
-  margin-top: 20px;
-  font-size: 14px;
   text-align: left;
+  margin-top: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: 1px solid #00ffc8;
+  padding-top: 10px;
+}
+
+.historico div {
+  margin-bottom: 5px;
+  font-size: 0.9em;
 }
 
 .iframe {
-  width: 80%;
+  width: 100%;
   height: 600px;
-  margin: 20px auto;
-  display: block;
-  border: 2px solid white;
+  border: none;
   border-radius: 10px;
+  box-shadow: 0 0 20px #00ffc8;
 }
