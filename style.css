@@ -1,81 +1,86 @@
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  background: #0e0e0e;
-  color: #e0e0e0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #0a0a0a;
+  color: #e6e6e6;
 }
 
-.container {
+.dashboard {
   max-width: 1200px;
-  width: 90%;
-  margin-top: 40px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.card {
-  background: #1a1a1a;
-  border: 1px solid #2e2e2e;
-  border-radius: 8px;
-  padding: 30px;
+header {
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
 }
 
-h1 {
+header h1 {
+  font-weight: 500;
   font-size: 2rem;
+  color: #00ffc8;
+}
+
+.painel-sinal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.sinal-destaque {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00ffc8;
   margin-bottom: 20px;
-  color: #ffffff;
+  text-align: center;
 }
 
-.sinal {
-  font-size: 1.8rem;
-  margin: 20px 0;
-  color: #00ff99;
-}
-
-.botao {
-  background: #00ff99;
-  color: #000000;
-  border: none;
-  padding: 12px 24px;
+.botao-gerar {
+  background: transparent;
+  color: #00ffc8;
+  border: 2px solid #00ffc8;
+  padding: 10px 30px;
+  border-radius: 5px;
   font-size: 1rem;
-  border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.botao:hover {
-  background: #00cc7a;
+.botao-gerar:hover {
+  background: #00ffc8;
+  color: #000;
 }
 
-.historico-title {
-  margin-top: 30px;
-  font-weight: 600;
-  color: #ffffff;
-  text-align: left;
+.historico-box {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
-.historico {
-  text-align: left;
-  margin-top: 10px;
+.historico-box h2 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 5px;
+}
+
+.historico-lista {
   font-size: 0.9rem;
-  max-height: 150px;
-  overflow-y: auto;
-  border-top: 1px solid #2e2e2e;
-  padding-top: 10px;
+  line-height: 1.6;
 }
 
-.historico div {
-  margin-bottom: 5px;
-}
-
-.iframe {
+.iframe-box iframe {
   width: 100%;
   height: 600px;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  background: #000;
 }
