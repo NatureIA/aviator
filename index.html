@@ -8,20 +8,27 @@
     <script defer src="app.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <h1>Próximo Sinal</h1>
-        <div id="sinal" class="sinal">Nenhum sinal gerado</div>
-        <button id="gerar" class="botao">Gerar Sinal</button>
-        <div class="historico-title">Histórico</div>
-        <div id="historico" class="historico"></div>
-      </div>
+    <div class="dashboard">
+      <header>
+        <h1>Painel de Sinais — Monitoramento</h1>
+      </header>
 
-      <iframe
-        src="https://shre.ink/xIBM"
-        class="iframe"
-        title="Plataforma Aviator"
-      ></iframe>
+      <section class="painel-sinal">
+        <div id="sinal" class="sinal-destaque">Nenhum sinal gerado</div>
+        <button id="gerar" class="botao-gerar">Gerar Sinal</button>
+      </section>
+
+      <section class="historico-box">
+        <h2>Histórico de Sinais</h2>
+        <div id="historico" class="historico-lista"></div>
+      </section>
+
+      <section class="iframe-box">
+        <iframe
+          src="https://shre.ink/xIBM"
+          title="Plataforma Aviator"
+        ></iframe>
+      </section>
     </div>
   </body>
 </html>
