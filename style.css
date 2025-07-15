@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-  color: white;
+  font-family: "Inter", sans-serif;
+  background: #0e0e0e;
+  color: #e0e0e0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,72 +11,71 @@ body {
 .container {
   max-width: 1200px;
   width: 90%;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .card {
-  background: #111;
-  border: 2px solid #00ffc8;
-  border-radius: 12px;
-  padding: 20px;
+  background: #1a1a1a;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  padding: 30px;
   text-align: center;
-  box-shadow: 0 0 15px #00ffc8;
-  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
 }
 
 h1 {
-  font-size: 2em;
-  color: #00ffc8;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .sinal {
-  font-size: 1.8em;
-  margin: 15px 0;
-  color: #fff;
-  text-shadow: 0 0 10px #00ffc8;
+  font-size: 1.8rem;
+  margin: 20px 0;
+  color: #00ff99;
 }
 
 .botao {
-  background: #00ffc8;
-  color: #000;
+  background: #00ff99;
+  color: #000000;
   border: none;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .botao:hover {
-  background: #00cfa0;
-  transform: scale(1.05);
+  background: #00cc7a;
 }
 
 .historico-title {
-  margin-top: 20px;
-  font-weight: bold;
-  color: #00ffc8;
+  margin-top: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: left;
 }
 
 .historico {
   text-align: left;
   margin-top: 10px;
+  font-size: 0.9rem;
   max-height: 150px;
   overflow-y: auto;
-  border-top: 1px solid #00ffc8;
+  border-top: 1px solid #2e2e2e;
   padding-top: 10px;
 }
 
 .historico div {
   margin-bottom: 5px;
-  font-size: 0.9em;
 }
 
 .iframe {
   width: 100%;
   height: 600px;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00ffc8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
