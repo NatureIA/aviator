@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Painel de Sinais Aviator</title>
-    <script defer src="app.js"></script>
+    <title>Painel de Sinais Premium</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
   </head>
   <body>
-    <div class="painel">
-      <h1>🔥 Próximo Sinal</h1>
-      <div id="sinal" class="sinal">Nenhum sinal gerado</div>
-      <button id="gerar" class="btn">Gerar Sinal</button>
-      <div id="historico" class="historico"></div>
-    </div>
+    <div class="container">
+      <div class="card">
+        <h1>🚀 Próximo Sinal</h1>
+        <div id="sinal" class="sinal">Nenhum sinal gerado</div>
+        <button id="gerar" class="botao">Gerar Sinal</button>
+        <div class="historico-title">📜 Histórico</div>
+        <div id="historico" class="historico"></div>
+      </div>
 
-    <iframe
-      src="https://shre.ink/xIBM"
-      class="iframe"
-      title="Plataforma Aviator"
-    ></iframe>
+      <iframe
+        src="https://shre.ink/xIBM"
+        class="iframe"
+        title="Plataforma Aviator"
+      ></iframe>
+    </div>
   </body>
 </html>
